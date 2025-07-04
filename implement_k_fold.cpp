@@ -26,10 +26,11 @@ int main()
             {
                 if(p>=idx && p<=idx+lim-1)
                 {
-                    for(int j=idx;j<=idx-lim+1;j++)
+                    for(int j=idx;j<=idx+lim-1;j++)
                     {
                         v2.push_back(x[j]);
                     }
+                    p=idx+lim-1;
                 }
                 else{
                     v1.push_back(x[p]);
@@ -39,9 +40,13 @@ int main()
             for(auto kk:v1) cout<<kk<<" ";
             cout<<'\n';
             for (auto ll:v2) cout<<ll<<" ";
+            cout<<'\n';
+            ret.push_back({v1,v2});
         }
 
 
+        // for(auto O:ret) cout<<O.first<<" "<<O.second<<'\n';
+        
 
 
     // }
