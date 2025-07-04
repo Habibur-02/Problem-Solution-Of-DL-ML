@@ -37,16 +37,25 @@ int main()
                 }
 
             }
-            for(auto kk:v1) cout<<kk<<" ";
-            cout<<'\n';
-            for (auto ll:v2) cout<<ll<<" ";
-            cout<<'\n';
+            // for(auto kk:v1) cout<<kk<<" ";
+            // cout<<'\n';
+            // for (auto ll:v2) cout<<ll<<" ";
+            // cout<<'\n';
             ret.push_back({v1,v2});
         }
 
 
         // for(auto O:ret) cout<<O.first<<" "<<O.second<<'\n';
-        
+        for (int i=0;i<ret.size();i++)
+        {
+
+            for(auto f:ret[i].first) cout<<f<<" ";
+            cout<<'\n';
+            for (auto q:ret[i].second) cout<<q<<" ";
+            cout<<'\n';
+            
+        }
+
 
 
     // }
