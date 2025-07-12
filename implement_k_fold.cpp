@@ -5,6 +5,7 @@ int main()
 
     vector<int>x={0,1,2,3,4,5,6,7,8,9};
     vector<int>y={0,1,2,3,4,5,6,7,8,9};
+    int x=0;
     vector<pair<vector<int>,vector<int>>>ret;
     int k=5;
     int lim=x.size()/k;
